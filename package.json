@@ -1,0 +1,14 @@
+{
+  "name": "random-ideas",
+  "version": "1.0.0",
+  "description": "Idea sharing app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Linuka Rivi Rihan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
