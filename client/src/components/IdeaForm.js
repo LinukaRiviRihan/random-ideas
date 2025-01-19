@@ -1,4 +1,4 @@
-import IdeasApi from '../services/ideasAPI';
+import IdeasAPI from '../services/ideasAPI';
 import IdeaList from './IdeaList';
 
 class IdeaForm {
@@ -22,6 +22,7 @@ class IdeaForm {
       alert('Please fill all fields');
       return;
     }
+
     // Save user to local storage
     localStorage.setItem('username', this._form.elements.username.value);
 
@@ -32,7 +33,7 @@ class IdeaForm {
     };
 
     // Add idea to server
-    const newIdea = await IdeasApi.createIdea(idea);
+    const newIdea = await IdeasAPI.createIdea(idea);
 
     // Add idea to list
     this._ideaList.addIdeaToList(newIdea.data.data);
